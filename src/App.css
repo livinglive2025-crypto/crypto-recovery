@@ -24,10 +24,70 @@
   color: #9ca3af;
   cursor: pointer;
   font-size: 0.875rem;
+  transition: color 0.2s;
+}
+
+.help-btn:hover {
+  color: #f3f4f6;
 }
 
 .content-scroll {
   flex: 1;
   overflow-y: auto;
   display: flex;
+}
+
+/* Tablet Screens (768px to 1024px) */
+@media (max-width: 1024px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .top-header {
+    padding: 16px;
+  }
+
+  .help-btn {
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile Screens (below 768px) */
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .top-header {
+    padding: 16px;
+  }
+
+  .content-scroll {
+    min-height: calc(100vh - 200px);
+  }
+}
+
+/* Small Mobile Screens (below 480px) */
+@media (max-width: 480px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .top-header {
+    padding: 12px;
+  }
+
+  .help-btn {
+    font-size: 0.75rem;
+  }
+
+  .content-scroll {
+    min-height: calc(100vh - 150px);
+  }
 }

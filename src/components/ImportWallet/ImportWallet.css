@@ -292,3 +292,372 @@
 .submit-btn {
   flex: 1;
 }
+
+/* Tablet Screens (768px to 1024px) */
+@media (max-width: 1024px) {
+  .import-card {
+    max-width: 95%;
+    padding: 40px;
+    border-radius: 24px;
+  }
+
+  .import-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+
+  .import-card h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+
+  .import-subtitle {
+    font-size: 16px;
+  }
+
+  .steps {
+    margin: 40px 0;
+    flex-wrap: wrap;
+  }
+
+  .line {
+    width: 60px;
+    margin: 0 12px;
+  }
+
+  .form-area label {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .form-area textarea {
+    height: 140px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .continue-btn {
+    padding: 16px;
+    font-size: 16px;
+    margin-top: 24px;
+  }
+
+  .seed-box {
+    min-height: 150px;
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .summary-box {
+    padding: 16px;
+    margin: 24px 0;
+  }
+
+  .summary-box h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .summary-box p {
+    margin: 8px 0;
+    font-size: 13px;
+  }
+
+  .input-field {
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+
+  .action-buttons {
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .reset-btn {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile Screens (below 768px) */
+@media (max-width: 768px) {
+  .import-card {
+    max-width: 100%;
+    padding: 30px 20px;
+    border-radius: 20px;
+    margin: 0;
+  }
+
+  .import-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .import-card h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .import-subtitle {
+    font-size: 14px;
+  }
+
+  .steps {
+    margin: 30px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .line {
+    width: 40px;
+    margin: 0 8px;
+    display: none;
+  }
+
+  .form-area {
+    max-width: 100%;
+  }
+
+  .form-area label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .form-area p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .form-area textarea {
+    height: 120px;
+    padding: 14px;
+    border-radius: 16px;
+    font-size: 15px;
+  }
+
+  .continue-btn {
+    padding: 14px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .seed-box {
+    min-height: 130px;
+    padding: 14px;
+    gap: 8px;
+  }
+
+  .seed-item {
+    padding: 10px 12px;
+  }
+
+  .seed-number {
+    font-size: 12px;
+  }
+
+  .seed-input {
+    min-width: 100px;
+    font-size: 14px;
+  }
+
+  .phrase-preview {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .phrase-word {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .secure-text {
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .summary-box {
+    padding: 14px;
+    margin: 20px 0;
+  }
+
+  .summary-box h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .summary-box p {
+    margin: 6px 0;
+    font-size: 12px;
+  }
+
+  .input-group {
+    margin-bottom: 16px;
+  }
+
+  .input-field {
+    padding: 11px 12px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .action-buttons {
+    gap: 8px;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .reset-btn {
+    padding: 11px 14px;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  .status-text {
+    font-size: 12px;
+  }
+}
+
+/* Small Mobile Screens (below 480px) */
+@media (max-width: 480px) {
+  .import-card {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+
+  .import-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+  }
+
+  .import-card h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+
+  .import-subtitle {
+    font-size: 13px;
+  }
+
+  .steps {
+    margin: 20px 0;
+    gap: 8px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .form-area label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .form-area p {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .form-area textarea {
+    height: 100px;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+
+  .continue-btn {
+    padding: 12px;
+    font-size: 14px;
+    margin-top: 16px;
+  }
+
+  .seed-box {
+    min-height: 110px;
+    padding: 12px;
+    gap: 6px;
+  }
+
+  .seed-item {
+    padding: 8px 10px;
+    gap: 6px;
+    font-size: 13px;
+  }
+
+  .seed-number {
+    font-size: 11px;
+  }
+
+  .seed-input {
+    min-width: 80px;
+    font-size: 13px;
+  }
+
+  .phrase-preview {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .phrase-word {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .secure-text {
+    gap: 6px;
+    font-size: 12px;
+  }
+
+  .summary-box {
+    padding: 12px;
+    margin: 16px 0;
+  }
+
+  .summary-box h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .summary-box p {
+    margin: 4px 0;
+    font-size: 11px;
+  }
+
+  .input-group {
+    margin-bottom: 12px;
+  }
+
+  .input-field {
+    padding: 10px 10px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  .action-buttons {
+    gap: 6px;
+    margin-top: 16px;
+    flex-direction: column;
+  }
+
+  .reset-btn {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .status-text {
+    font-size: 11px;
+    margin-top: 12px;
+  }
+
+  .remove-word {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+  }
+}

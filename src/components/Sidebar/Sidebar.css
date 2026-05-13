@@ -6,6 +6,7 @@
   flex-direction: column;
   padding: 24px;
   height: 100vh;
+  flex-shrink: 0;
 }
 
 .logo-section {
@@ -48,6 +49,7 @@
   cursor: pointer;
   text-align: left;
   transition: all 0.2s;
+  font-size: 0.95rem;
 }
 
 .nav-item:hover {
@@ -71,6 +73,7 @@
 .footer-icon {
   color: #7C3AED;
   margin-bottom: 8px;
+  font-size: 1.25rem;
 }
 
 .sidebar-footer h4 {
@@ -83,4 +86,118 @@
   font-size: 0.75rem;
   color: #6b7280;
   line-height: 1.4;
+}
+
+/* Tablet Screens (768px to 1024px) */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 220px;
+    padding: 16px;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #1f2937;
+    min-height: auto;
+  }
+
+  .logo-section {
+    margin-bottom: 20px;
+  }
+
+  .logo-text {
+    font-size: 0.9rem;
+  }
+
+  .nav-item {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .sidebar-footer {
+    padding: 12px;
+  }
+
+  .sidebar-footer h4 {
+    font-size: 0.8rem;
+  }
+
+  .sidebar-footer p {
+    font-size: 0.7rem;
+  }
+}
+
+/* Mobile Screens (below 768px) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    padding: 16px;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #1f2937;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .logo-section {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .logo-text {
+    font-size: 0.95rem;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex: 1;
+  }
+
+  .nav-item {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    flex: 0 1 auto;
+    white-space: nowrap;
+  }
+
+  .nav-label {
+    display: inline;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+}
+
+/* Small Mobile Screens (below 480px) */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    padding: 12px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .logo-section {
+    margin-bottom: 12px;
+    gap: 8px;
+  }
+
+  .logo-text {
+    font-size: 0.9rem;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .nav-item {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    flex: 0 1 auto;
+  }
 }
