@@ -1,0 +1,30 @@
+.step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.step-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+}
+
+.step-circle.active {
+  background: #7c3aed;
+  border: none;
+  color: white;
+}
+
+.step span {
+  color: #9ca3af;
+}
+
+.active-text {
+  color: #a855f7 !important;
+}
